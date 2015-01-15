@@ -20,14 +20,6 @@ IF(COMMAND cmake_policy)
   cmake_policy(SET CMP0003 NEW)
 ENDIF(COMMAND cmake_policy)
 
-IF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-    SET(CMAKE_INSTALL_PREFIX
-        "inst" CACHE PATH "MGIZA install prefix" FORCE
-        )
-    MESSAGE(STATUS "You have not set the install dir, default to './inst', if
-    you want to set it, use cmake -DCMAKE_INSTALL_PREFIX to do so")
-ENDIF(CMAKE_INSTALL_PREFIX_INITIALIZED_TO_DEFAULT)
-
 #set various platform specific global options
 IF(WIN32)
  SET(CMAKE_DEBUG_POSTFIX "d")
