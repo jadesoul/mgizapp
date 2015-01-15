@@ -114,7 +114,6 @@ TARGET_LINK_LIBRARIES (
     mgiza_lib
     ${Boost_LIBRARIES}
     ${CMAKE_THREAD_LIBS_INIT}
-/usr/lib/librt.a
     )
 
 INSTALL(TARGETS mgiza_lib mgiza snt2cooc snt2plain plain2snt symal hmmnorm d4norm snt2coocrmp
